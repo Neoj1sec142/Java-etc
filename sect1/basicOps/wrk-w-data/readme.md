@@ -61,4 +61,4 @@ float ex: float temp = 16.3f;
         represented as a class(String class) but more later on this
 
 ### Storing Boolean in Java:
-* 
+* Boolean(boolean) - evaulated only to true or false and is used to compare

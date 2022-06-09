@@ -54,3 +54,19 @@
 //         System.out.println("Hello " + first + " " + last);
 //     }
 // }
+
+// Storing boolean variables
+// public class Example{
+//     public static void main(String[] args){
+//         boolean isLoggedIn = false;
+//         System.out.println(isLoggedIn);
+//     }
+// }
+
+// Using Bool to compare
+// public class Example{
+//     public static void main(String[] args){
+//         System.out.println(5 > 10);
+//         System.out.println(5 < 10);
+//     }
+// }
