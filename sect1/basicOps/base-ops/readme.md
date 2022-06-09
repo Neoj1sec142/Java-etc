@@ -37,3 +37,21 @@
 * && (Logical AND) - returns tru if both the operands are true
 * || (Logical OR) - returns true if either of operands are true
 * ! (Logical NOT) - reutnr true if the operand is false(compliments the operand)
+
+### Shortcuts for operators:
+* += - adds the right operand to the left nad assigns results to left operand
+* -= - subtracts the right from the left and stores the res in the left
+* *= - multiplies the right with the left and res to the left
+* /= - divides the left by the right and stores the res in the left
+* %= - divides left by right and returns the remainder to the left
+
+### Increment and decrement:
+* ++ = add one
+* -- = minus one
+- the both have two names prefix and postfix
+* Prefix: the increment and decrement unary operators appear before the operand, 
+        while using the prefix form we first update the value of the operand, and then we use the new value in te expression
+        EX ++num
+* Postfix: the operators appear after the operand. While using the postfix form we    
+        first use the value of the the operand in the expression an then update it.
+        EX num++

@@ -58,3 +58,14 @@ import javax.swing.plaf.synth.SynthStyle;
 //         System.out.println("Result is: " + result);
 //     }
 // }
+
+// public class Example{
+//     public static void main(String[] args){
+//         int prod1, prod2, total, delivery;
+//         prod1 = 57;
+//         prod2 = 98;
+//         delivery = 8;
+//         total = prod1 + prod2;
+//         System.out.println("Final Price is: " + (total += delivery));
+//     }
+// }

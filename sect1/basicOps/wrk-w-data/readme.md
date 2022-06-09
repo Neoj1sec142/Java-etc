@@ -1,9 +1,9 @@
 # Working w/ Data: Section 3
 [x] Storage Containers   
-[] Container Types      
-[] Storing Numbers in Java      
-[] Working w/ Alphabetical Data      
-[] True or False      
+[x] Container Types      
+[x] Storing Numbers in Java      
+[x] Working w/ Alphabetical Data      
+[x] True or False      
 ***   
 ## Storage Containers:
 * Variables are a named location where some data can be stored. This means that when 
