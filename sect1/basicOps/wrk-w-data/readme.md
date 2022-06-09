@@ -36,8 +36,8 @@ data_type var_name; OR data_type var_name = value;
 * Primitive - provided by java
 * Non-Primitive - created by the user
 #### Primitive Datra Types:
-* Numeric - Integer, Floating Point, Double Floating Point
-* Textual - Character, String
+* Numeric - Integer(int), Floating Point(float), Double Floating Point(double)
+* Textual - Character(char), String(String)
 * Boolean
 #### Non Primitive Data Types:
 * Classes
@@ -51,3 +51,14 @@ ex: int age; OR int age = 19;
 * the only difference between a float and double point float is the size
 double ex: double temp = 16.3;
 float ex: float temp = 16.3f;
+
+### Storing Alphabetical Data in Java:
+* Character (char) - is used to manipulate characters of strings or just use one 
+                        letter
+- As you can see with compliing the letters are turned into numbers for binary
+        The encoding is called ASCII and Unicode(uni = hexadecimal ex: 0x0041 = A)
+* String(String) - strings are not considered primitive data types and therefore are 
+        represented as a class(String class) but more later on this
+
+### Storing Boolean in Java:
+* 
