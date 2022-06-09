@@ -1,3 +1,5 @@
+import javax.swing.plaf.synth.SynthStyle;
+
 // addition in java
 // public class Example{
 //     public static void main(String[] args){
@@ -33,5 +35,26 @@
 //         int num1 = 5;
 //         int num2 = 2;
 //         System.out.println("Result is: " + (num1 == num2));
+//     }
+// }
+
+// Logical operators in action
+// public class Example{
+//     public static void main(String[] args){
+//         boolean var = true;
+//         boolean var2 = false;
+//         System.out.println("Performing logical AND: " + (var && var2));
+//         System.out.println("Performing logical OR: " + (var || var2));
+//         System.out.println("Performing logical NOT: " + (!var));
+//     }
+// }
+
+// public class Example{
+//     public static void main(String[] args){
+//         int num1 = 7;
+//         int num2 = 3;
+//         boolean result;
+//         result = (num1 > num2 || num1 < num2);
+//         System.out.println("Result is: " + result);
 //     }
 // }

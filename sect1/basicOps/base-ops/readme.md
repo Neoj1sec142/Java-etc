@@ -30,3 +30,10 @@
 * != Not equal too
 * >= Greater than or equal too
 <!-- * <= Less than or equal too -->
+
+### Logical Operators in Java:
+- is a symbol or word used to connect two or more expressions such that the value of
+         the compound expression produced depends only on that of the originial expression and on the meaning of the operator
+* && (Logical AND) - returns tru if both the operands are true
+* || (Logical OR) - returns true if either of operands are true
+* ! (Logical NOT) - reutnr true if the operand is false(compliments the operand)
