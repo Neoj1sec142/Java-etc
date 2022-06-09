@@ -25,3 +25,29 @@ data_type var_name; OR data_type var_name = value;
 * Keywords - predefined, reserved words that have special meaning to the compiler
         they are part of the syntax and they cannot be used as an Identifier    
 [Java Keywords](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html)
+
+## Container Types:
+- if you needed to store a textual file on your pc you would use .txt
+        if you wanted data in columns and rows you would use .xlsx 
+        or if you wish for graphical data you wpuld use a .pptx similarly
+        we need to store data in variables with apropriate data Types
+        -hence when you declare a var in java you need to specify the Types
+#### Data Types in Java: ####
+* Primitive - provided by java
+* Non-Primitive - created by the user
+#### Primitive Datra Types:
+* Numeric - Integer, Floating Point, Double Floating Point
+* Textual - Character, String
+* Boolean
+#### Non Primitive Data Types:
+* Classes
+* Objects
+* Arrays
+* ...etc
+***   
+### Storing Numbers in Java:
+* simple ex
+ex: int age; OR int age = 19;
+* the only difference between a float and double point float is the size
+double ex: double temp = 16.3;
+float ex: float temp = 16.3f;
