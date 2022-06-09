@@ -19,3 +19,19 @@
 //     }
 // }
 
+
+// Comparing Stuff in Java
+// public class Example{
+//     public static void main(String[] args){
+//         int reqAge = 18;
+//         System.out.println(reqAge > 18);
+//     }
+// }
+
+// public class Example{
+//     public static void main(String[] args){
+//         int num1 = 5;
+//         int num2 = 2;
+//         System.out.println("Result is: " + (num1 == num2));
+//     }
+// }

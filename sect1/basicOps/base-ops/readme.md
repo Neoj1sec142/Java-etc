@@ -21,3 +21,12 @@
 * * muliplication: multiplies values on either sides of the operator   
 * / division: divides left hand operand by the right hand operand
 * % modulus: divides left operand by right operand and return the remainder
+
+### Comparing Stuff:
+##### Comparison Operators:
+* > Greater Than
+<!-- * < Less Than -->
+* == Equal too
+* != Not equal too
+* >= Greater than or equal too
+<!-- * <= Less than or equal too -->
