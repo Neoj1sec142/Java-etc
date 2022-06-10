@@ -27,18 +27,18 @@
 // }
 
 // simple nested else if
-public class Example{
-    public static void main(String[] args){
-        String username = "Joh";
-        String password = "12345";
-        if(username == "John"){
-            if (password == "12345"){
-                System.out.println("Login Successful");
-            }else{
-                System.out.println("Password Incorrect");
-            }
-        }else{
-            System.out.println("User not found");
-        }
-    }
-}
+// public class Example{
+//     public static void main(String[] args){
+//         String username = "John";
+//         String password = "12345";
+//         if(username == "John"){
+//             if (password == "12345"){
+//                 System.out.println("Login Successful");
+//             }else{
+//                 System.out.println("Password Incorrect");
+//             }
+//         }else{
+//             System.out.println("User not found");
+//         }
+//     }
+// }
