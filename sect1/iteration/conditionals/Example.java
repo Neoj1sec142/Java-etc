@@ -42,3 +42,58 @@
 //         }
 //     }
 // }
+
+// traffic light example
+// public class Example{
+//     public static void main(String[] args){
+//         String light = "Green";
+//         if(light == "Green"){
+//             System.out.println("Please keep going");
+//         }else if(light == "Yellow"){
+//             System.out.println("Please slow down / YEILD");
+//         }else{
+//             System.out.println("Please STOP!");
+//         }
+//     }
+// }
+
+// game w/3 players
+// public class Example{
+//     public static void main(String[] args){
+//         int user1 = 9;
+//         int user2 = 4;
+//         int user3 = 7;
+//         if(user1 > user2 && user1 > user3){
+//             System.out.println("User 1 Wins");
+//         }else if(user2 > user1 && user2 > user3){
+//             System.out.println("User 2 Wins");
+//         }else{
+//             System.out.println("User 3 Wins");
+//         }
+//     }
+// }
+
+// basic switch statement
+// public class Example{
+//     public static void main(String[] args){
+//         int num1 = 5;
+//         int num2 = 3;
+//         String operator = "/";
+//         switch(operator){
+//             case "+":
+//                 System.out.println("Addition is: " + (num1 + num2));
+//                 break;
+//             case "-":
+//                 System.out.println("Subtraction is " + (num1 - num2));
+//                 break;
+//             case "*":
+//                 System.out.println("Multiplication is " + (num1 * num2));
+//                 break;
+//             case "/":
+//                 System.out.println("Division is: " + (num1 / num2));
+//                 break;
+//             default:
+//                 System.out.println("Invalid Operator...");
+//         }
+//     }
+// }
