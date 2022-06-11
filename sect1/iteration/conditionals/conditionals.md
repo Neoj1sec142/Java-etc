@@ -37,4 +37,4 @@ switch(expression){
 - The "?" is used for ternary conditionals just like in javascript
 EX: var = expression1 ? expression2: expression3
 * if ex1 is true ex2 is assigned to the var 
-* if ex1 is false, ex3 is assigned to the var
+* if ex1 is false, ex3 is assigned to the var  
