@@ -97,3 +97,13 @@
 //         }
 //     }
 // }
+
+// ternary if else
+// public class Example{
+//     public static void main(String[] args){
+//         int num = 8;
+//         String res;
+//         res = (num % 2 == 0)? "Even Number" : "Odd Number";
+//         System.out.println(res);
+//     }
+// }
