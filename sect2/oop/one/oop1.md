@@ -28,3 +28,23 @@ Inheritance - in programming, one element can inherit various
     characteristics and capabilities from another element. Inheritance is important because it supports the conecpt of reusability
 PolyMorphism - poly = many morphism = forms in programming data comes in 
     many forms via array string int obj ...
+
+### Classes and Objects:
+* just like a variable is used to store some data, similarly, a clas is a 
+    high-level container that is used to store data, define behaviors(methods), and group various programming statements
+* therefore, a class is used to encapsulate the whole surface code into a 
+    single wrapper that can be accessed with help of objects 
+***   
+##### What is a Class?
+- a class is a user-defined prototype for an object that defines the set 
+    of attributes that characterize and object of the class
+- in simple words it is a blueprint for new objects created in that class 
+    to define how they will be contructed and what variables and behaviors they will have access too
+***   
+##### What is an Object?
+- an object is known as an instance of the class. as we have seen, a 
+    class is just a blyeprint so its just like a description
+- Objects have 2 things: 
+    * Attributes (data variables of the class)
+    * Behaviors (methods defined in the class)
+    
