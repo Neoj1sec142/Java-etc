@@ -88,3 +88,34 @@ method_name(data_type param1, data_type param2, ...){
 }
 - the return_type represents the data type of value that will be returned 
     by the method by performing a particlar operation. If nothing is returned by the method, the return_type will be void
+
+### Variables:
+* is a names memory location in the computer memory which helps us to 
+    store data. this data can be retireved in any instance of the program. In simple words, a variable is a container to store data
+##### There are 3 types of variables in java:
+* local variables
+* instancce variables
+* static variables
+***   
+Local Variables - is a var thats decalred within the body of a method or 
+    a code block, these variables can only be used in that particular code block/method. Other methods in the class aren't even aware that the variable exist 
+* The memory is allocated to the local variables only when the control 
+    flow enters the method or code block. These variables are destroyed once the control flow exits that method/code block
+* While defining the local variable, we cannot use access modifiers
+* Local variables when defined should be initialized with some initial 
+    value before they can be used
+***     
+Instance Variables - are also calles fields in a class that represent the 
+    data associated with an object of a class, since Java follows the concept of reusability, we can create a class and its instance once that can be used by various instances of the class. There are called instance vairables... These variables are decalred inside the body of a class but not within any methods
+* When space is allocated for an object in the memory heap, a slot for 
+    each instance varaible is created. therefore they differ with each instance of the class created although they have the same identity
+* The memory is allocated to the instance variables when an object is 
+    created with the use of keyword 'new' and these variables are destoryed when the object is destoryed
+* We can specify various access modifiers with the instance variables
+* These variables have a global scope, meaning they can be accessed and 
+    used by any method or the code block in a particular class
+***   
+Static Variables - a static variabel is just like an instance variable 
+    that is defined in the body of the class at the top and not in any mthod or code block. The difference lies while defining these variables, they are defines using the static keyword in the beginning, following is the syntax:
+##### SYNTAX #####    
+static data_type variable_name = value;
