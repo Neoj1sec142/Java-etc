@@ -48,3 +48,20 @@ PolyMorphism - poly = many morphism = forms in programming data comes in
     * Attributes (data variables of the class)
     * Behaviors (methods defined in the class)
     
+### Defining a Class:
+* Class is a simple prototype to create objects. 
+##### SYNTAX #####   
+accessModifier class className{
+    //body of the class
+}
+* in the above syntax, accessModifier is the type of access modifier that 
+    specifies the accessibility of scape of the class. So far we've used public
+* the accessModifier is followed by the class keyword and finally the
+     name of the class. And as we have seen, the curly brace {} define the body of the class in which we encapsulated all the attributes and methods
+- in a single Java file (.java file), there can only be one public class 
+    but there can be multiple non-public classes
+- while defining a class, mentioning the access modifier is optional
+- as we already know, the name of the source file should be the same as 
+    the name of the public class 
+- the name of the class should be meaningful and should be in a 
+    capitalized form. For example, the class name Data is valid while the class name is invalid
