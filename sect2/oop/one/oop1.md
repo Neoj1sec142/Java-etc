@@ -65,3 +65,26 @@ accessModifier class className{
     the name of the public class 
 - the name of the class should be meaningful and should be in a 
     capitalized form. For example, the class name Data is valid while the class name is invalid
+
+### Exploring Methods:
+- A method in Java is a block of code that performs a perticular task and 
+    may accept optional user inputs ad accordingly give outputs
+- This block fo codde is responsible for a particular task and only 
+    executes when they are called, which is in simple words when we want them to execute
+- This block of code is written once and can be executed 'n' number of 
+    times (whenever its called)
+* 1st reason methods are important: resuablility (write once exe anytime)
+* 2nd reason: methods help us group various programming statements that 
+    are responsible to perform an operation
+    - methods help to divide a complex problem into smaller chunks that 
+        make your program easy to understand and reusable
+- There are 2 types on methods in java:
+    * Standard Library Methods (javas default methods)
+    * User-defined Methods (built by the user)
+##### SYNTAX #####   
+access_modifier return_type
+method_name(data_type param1, data_type param2, ...){
+    //body of method
+}
+- the return_type represents the data type of value that will be returned 
+    by the method by performing a particlar operation. If nothing is returned by the method, the return_type will be void
