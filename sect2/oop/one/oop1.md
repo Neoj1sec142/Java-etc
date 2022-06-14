@@ -119,3 +119,6 @@ Static Variables - a static variabel is just like an instance variable
     that is defined in the body of the class at the top and not in any mthod or code block. The difference lies while defining these variables, they are defines using the static keyword in the beginning, following is the syntax:
 ##### SYNTAX #####    
 static data_type variable_name = value;
+* there would only be one cope of each static variable per class, 
+    regardless of how many objects are created from it. Hence, these variables are also called class variables.
+    
