@@ -122,3 +122,34 @@ static data_type variable_name = value;
 * there would only be one cope of each static variable per class, 
     regardless of how many objects are created from it. Hence, these variables are also called class variables.
     
+### Access Modifiers:
+* access modifiers (or access specifiers) are keywords in object oriented 
+    lanugages that set the accessability of classes, methods and other members
+* modifiers are Java keywords that are used to declare features in 
+    applications. They affect either the lifetime or the accessibility of a feature. Here, a feature may be a class, a method, or a variable.
+* Modifiers that affect the visiility of a feature are called access 
+    modifiers or visibility modifiers. Therefore, access modifiers control the access of a feature
+#### Types of access modifiers in Java:
+    * Public
+    * Private
+    * Protected
+    * Default
+***   
+* when none of the three access modifiers mentioned are used, the default 
+    access modifier is provided. A varaible or method declared without any access control modifier is available to any other class in the same java file
+#### Public:
+* the members, methods and classes that are declared publi can be 
+    accessed from anywhere, This modifier doesn't put any restrictions on access
+* it is the most unrestrictive access modifier, keyword = public
+#### Private:
+* private is the default access modifier for the members of the class, 
+    while a class cannot be decalred as private. It limits the visibility of methods and instance variables to the class in which they are defined
+* Methods, variables and contructors that are declared private can only 
+    be accessed within the decalred class itself. Hence, the most restrictive access modifier
+* it is the main way that an object encapsulates itself and hides data 
+    from the outside world. It provides security to the class members, keyword = private
+#### Protected:
+* if the members of the class are declared as protected, then they can be 
+    used inside that class and cannot be accessed by other classes directly
+* other classes can only access these members if they are related to a 
+    particular class via inheritance, and just like the private modifier a class cannot be declared as protected
