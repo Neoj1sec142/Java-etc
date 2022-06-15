@@ -24,3 +24,15 @@ class Name{
 * even if you do not create a constructor manually, Java automatically provides a 
     defualt constructor that initializes all member variables to zero
 * once you define your own constructor, the defualt constructor is no longer used
+#### Two Kinds Of Constructors:
+* defualt - a default constructor is also known as a non-parameterized constructor. 
+        it is a constructor that does not accept any arguements. In simple terms, a default constructor does not have any params in its definition
+        * this type of constructor can be used to assign fixed values to the instance variables for all the objects or to execute some logic whenever the object is created
+* parameterized - a parameterized constructor is obviously one that accepts one or    
+        more params. this is generally used to create unique instances of the object and assign values to the instance variables
+##### SYNTAX #####
+class className{
+    constructor(data_type param1, data_type param2, etc){
+        //body of constructor
+    }
+}
