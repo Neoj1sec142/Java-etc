@@ -44,3 +44,7 @@ class className{
     current instance of a class. The keyword resolves and ambiguity between a param and a member variable of the same name
 - with 'this' you can access methods, fields, and constructors f the same 
     class within the class. But, the main motto of using this keyword is to differentiate the formal param and data members of the class 
+
+##### The 'this' keyword can also be used for:
+* Use this() to invoke the current class constructor
+    - this() can be used to call one constructor within another without creating the objects multiple times for the same class. 
