@@ -64,3 +64,21 @@ class derivedClass extends baseClass{
 }
 - whenever we create an object of the child class and try to access 
     something, it will first search for that in the child class, i found then it will execute it and return the data. If not found, then it will search and access the data from the parent class.
+- the idea of reusability means when we want to create some feature and 
+    there is already sucha feature that includes some of the code that we want, then we can derived our feature from the existing one instead of developing it from scratch
+- when we want to include a child constructor we use the 'super' keyword
+- the super keyword refers to superclass (parent) objects. it can be used 
+    for the following
+    * it is used to differentiate the members if the superclass from the members of the subclass if they have th same names
+    * it is used to invoke the superclass constructor from the subclass
+
+##### SYNTAX 2 access members of superclass from the subclass #####
+super.variableName;
+super.methodName();
+
+#### Method Overriding:
+- inhritance is an OOP property that allows us to derive a new class from 
+    an existing class. The subclass can inherit the attributes and methods of the superclass
+- just like the this keyword allows us to have the same variable name and
+     different values from parent to child classes. When we have a parent and child class with the same name for methods, the method then becomes overwritten by the child class(hence because it check the subclass before the parent if the child has the same named method it will satisfy the call and execute from the child)
+

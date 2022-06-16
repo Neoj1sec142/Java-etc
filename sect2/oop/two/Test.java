@@ -83,3 +83,24 @@
 //         System.out.println(test.num);
 //     }
 // }
+
+// example of accessing contructor of parent class in subclass
+// public class Test{
+//     int num = 10;
+//     void display() {
+//         System.out.println(num);
+//     }
+// }
+// class Test2 extends Test{
+//     int num = 12;
+//     void display(){
+//         System.out.println(num);
+//         System.out.println(super.num);
+//     }
+// }
+// class Main{
+//     public static void main(String[] args){
+//         Test2 test = new Test2();
+//         test.display();
+//     }
+// }
