@@ -36,3 +36,11 @@ class className{
         //body of constructor
     }
 }
+
+### The 'this' keyword:
+- with the last example having 2 same name variables in scope is not 
+    allowed this is becuase the Java comipler gets confused because of the ambiguity in names between the instance variable and the param 
+- 'this' keyword in Java is a reference variable thay points to the 
+    current instance of a class. The keyword resolves and ambiguity between a param and a member variable of the same name
+- with 'this' you can access methods, fields, and constructors f the same 
+    class within the class. But, the main motto of using this keyword is to differentiate the formal param and data members of the class 
