@@ -81,4 +81,6 @@ super.methodName();
     an existing class. The subclass can inherit the attributes and methods of the superclass
 - just like the this keyword allows us to have the same variable name and
      different values from parent to child classes. When we have a parent and child class with the same name for methods, the method then becomes overwritten by the child class(hence because it check the subclass before the parent if the child has the same named method it will satisfy the call and execute from the child)
-
+- #!# if you look in the labrary class you will see the @Override:
+    * this is an annotation. In java, annotations are the metadata that we use to provide information to the complier
+    * here the annotation specifies the complier that the method after this annotatio overrides the method of the superclass
