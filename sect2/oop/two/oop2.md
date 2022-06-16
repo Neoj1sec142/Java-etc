@@ -48,3 +48,19 @@ class className{
 ##### The 'this' keyword can also be used for:
 * Use this() to invoke the current class constructor
     - this() can be used to call one constructor within another without creating the objects multiple times for the same class. 
+
+### Inheritance:
+- in programming one class can inherit carious characterisitics and 
+    capabilities from another class. Here the charachteristics that we are talking about are the attributes of the class, while the capabilities are its behavior(methods of the class)
+
+##### Terms to know when working with Inheritance:
+* Parent Class: is the class being inherited from the other classes. AKA 
+    Base class
+* Child Class: is the class that inherits from another class. AKA Derived 
+    class
+##### SYNTAX ##### 
+class derivedClass extends baseClass{
+    //body of class
+}
+- whenever we create an object of the child class and try to access 
+    something, it will first search for that in the child class, i found then it will execute it and return the data. If not found, then it will search and access the data from the parent class.
