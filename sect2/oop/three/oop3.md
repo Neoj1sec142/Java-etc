@@ -57,3 +57,48 @@ class className implements interfaceName{
     * Methods in an interface are implicitly public 
     * Just like a class, an interface is written in a file .java ext, w/the nam of the 
         interface matching the name of the file
+
+#### Multiple Interfaces
+interface interfaceName{
+    //body of interface 
+}
+interface interfaceTwoName{
+    //body of interface 
+}
+class className implements interfaceName, interfaceTwoName{
+    //body of class 
+}
+- just like a class if one interface is to inherit another interface we use the 
+    extends keyword
+interface interfaceOne{
+    //body of interface 
+}
+interface interfaceTwo extends interfaceOne{
+    //body of interface 
+}
+- multiple inheritance is not supported in Java when it comes to classes. But it does 
+    for interfaces. an interface can inherit from multiple interfaces 
+interface interfaceOne{
+    //body of interface 
+}
+interface interfaceTwo{
+    //body of interface 
+}
+interface interfaceThree extends interfaceOne, interfaceTwo{
+    //ody of interface 
+}
+* obviously declaring methods in an interface works but coding all of those methods 
+    implemetation for each new instance of the interface is tedious. Therefore Default Methods:
+    * Default methods are methods that can have a body. The most important use of default methods in interfaces is to provide additional functionality to a given type without breaking down the implementing classes 
+    * sometimes methods have only a single implementation and there is no need to provide their implementation in each class, in that case we can declare that method as default and provide the interface the implementation itself
+
+- Default methods are methods that have a body inside the interface and use the 
+    'default' keyword
+public interface Shape{
+    public void getShape();
+    public void getShapeName();
+    public void getSides();
+    public void createShape(){
+        //this method will have the code to render the shape
+    }
+}
