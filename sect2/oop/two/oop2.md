@@ -84,3 +84,40 @@ super.methodName();
 - #!# if you look in the labrary class you will see the @Override:
     * this is an annotation. In java, annotations are the metadata that we use to provide information to the complier
     * here the annotation specifies the complier that the method after this annotatio overrides the method of the superclass
+* Inheritance we've seen until now is called Single Inheritance as it enables the 
+    derived class to inherit properties from a single parent
+
+##### More types of inheritance:
+* Multilevel Inheritance
+* Multiple Inheritance
+* Hierarchial Inheritance
+***   
+Multilevel - attributes and behaviors of the base class and the derived class are 
+    further inherited into the new derived class (Grandfather to father to child)
+    EX
+class Grandfather{
+    //body of class
+}
+class Father extends Grandfather{
+    //body of the class
+}
+class Child extends Father{
+    //body of the class 
+}
+***   
+Multiple - when a class can be derived from more than one base class then this type 
+    of inheritance is called as multiple inheritance. In multiple inheritance, all the
+    features of the base classes are inherited into the derived class
+    * note that multiple inheritance is not directly supported in Java to work with classes. But it can be surely implemented with something called "Interfaces" 
+***   
+Hierarchial - when more than one derived class is created from a single base class, 
+    then it is called as hierarchial inheritance
+class Company{
+    //body of class
+}
+class Employee extends Company{
+    //body of class 
+}
+class Intern extends Company{
+    //body of class 
+}
