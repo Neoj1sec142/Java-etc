@@ -121,3 +121,16 @@ class Employee extends Company{
 class Intern extends Company{
     //body of class 
 }
+
+***   
+### The 'final' Keyword:
+- the final keyword in Jaca is known as a non-access modifier for Java elements. This 
+    final keyword can be used with variables methods and classes
+- Situations to use it:
+* With variables: when the variable is being declared using the final keyword, it 
+    cannot be reinitialized with another value. In simpole words, the final keyword can be used to declare constants.
+* With methods: when a method is declared using the final keyword, it cannot be 
+    overridden by any subclasses. The main intention of making a method final would be that the content of the method should not be changed by any outsider
+* With classes: when a class is declared using the final keyword, it cannot be 
+    inherited by any of the other classes. The main purpose of a using a class being declared as final is to prevent the class from being subclassed
+* Good practice to make final variables Caps

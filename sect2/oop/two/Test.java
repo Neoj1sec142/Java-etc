@@ -104,3 +104,15 @@
 //         test.display();
 //     }
 // }
+
+//final class and method example
+// PI remains the same throughout as it is  mathematical constant
+// therfore we declare a var PI as final 
+// public class Test{
+//     public static void main(String[] args){
+//         final double PI = 3.14;
+//         double radius = 5.9;
+//         double area = PI * radius * radius;
+//         System.out.println("The area of the circle is " + area);
+//     }
+// }
