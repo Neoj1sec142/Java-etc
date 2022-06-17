@@ -30,3 +30,30 @@ method_name(params);
     implementation of the abstract methods declared in the super class.
 - if a subclass does not implement all the abstract methods of the abstract 
     superclass, then the subclass must be declared abstract as well
+
+### Interfaces in Java:
+- Interfaces -> Abstract Class - data abstraction simply refers tp providing only 
+        essential info about the daya to the outside world, hiding the background details or implementation
+
+* an interface in java is just like a class, yet it's not a class. An interface can 
+    have methods and variables jist like the class but the methods declared in the interface are default abstract
+* also the variables declared in an interface are public, static & final by default
+* an interface is a collection of abstract methods and prvides a fully abstract class. 
+    For the class to use these methods, it needs to implement an interface, thereby inheriting the abstract methods of interface 
+* KEYWORD = interface
+* KEYWORD to implement = implements
+##### SYNTAX #####
+interface interfaceName{
+    //body of interface
+} 
+class className implements interfaceName{
+    //body of class
+}
+* Shape.java - implementing interface ex 
+    * an interface is implicitly abstract. You do not need to use the abstract keyword 
+        while declaring an interface
+    * Each method in an interface is also implicitly abstract, so the abstract keyword 
+        is not needed
+    * Methods in an interface are implicitly public 
+    * Just like a class, an interface is written in a file .java ext, w/the nam of the 
+        interface matching the name of the file
