@@ -28,4 +28,8 @@ objectName instanceof className
 * Float - float type value in an object, single field type float.
 * Double - wraps a primiive double into an object. Tis class is useful in providing 
     vairous methods that can be used to convert a double to a String and vice vera
-* Boolean - wraps a primitive boolean and contains only a single param either T/F
+* Boolean - wraps a primitive boolean and contains only a single param either T/F 
+
+# Working with Wrappers:
+- in java we can use the valueOf() method to convert primitive types into corresponding objects. 
+- similarly, to convert objects into the primitive types, we can use the corresponding value methods(intValue(), doubleValue(), etc) present in each wrapper class
