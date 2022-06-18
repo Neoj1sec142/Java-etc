@@ -102,3 +102,25 @@ public interface Shape{
         //this method will have the code to render the shape
     }
 }
+***   
+### Nested Classes in Java:
+- just as a if conditional is called inside another classes can be defined inside of classes which is called Nested class. The class written within is called the nested class and the class that holds the inner class is called the outer class
+- inner classes in Java are security measures because you can make the inner class private 
+- we know a class cannot be associated with the access modifier private, but if be have the class as a member of another class, then the inner class can be made private 
+##### SYNTAX #####
+class outerClass{
+    //body of outer
+    class nestedClass{
+        //body of nested 
+    }
+}
+- nested classes generally fall into two types:
+    * non-static nested classes(inner classes) - this can access all the members of the outer class and it is also commonly known as the Inner class
+    * static nested classes - you can also nest static classes one of the major differences of Static and Inner classes is that unlike the inner class, a static nested class cannot access the member variables of the outer class, and you can access with nested static class without going through the outer like you have to for inner 
+##### SYNTAX #####
+class OutClass{
+    //body of outer
+    static class NestedClass{
+        //body of nested
+    }
+}
