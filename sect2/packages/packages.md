@@ -12,3 +12,11 @@ package packageName;
 * a package inside another package is known as a subpackage. 
 ##### SYNTAX #####
 package packageName.subpackageName;
+
+### Using Packages:
+- we can import packages using the 'import' keyword like:
+import packageName; -> imports that package 
+import packageName.subpackageName; -> imports just a subpackage 
+import packageName.*; -> import everything from that package
+import packageName.className; -> imports just a class from the package
+import packageName.interfaceName; -> import just an interface from package 
