@@ -16,4 +16,4 @@ the Java I/O package (java.io) provides a set of input streams and a set of outp
 * this package contains a lot of things. Hence, to precisely work with Files, it provides a File class that can be used for all the file handling and manipulation in Java programs
 * Thus, if we want to use a file class, we need to create an object of thaty particular class and should specify the filename or directory name followd by the operations.
 * import java.io.*; //whole package
-* import java.io.File; //file class
+* import java.io.File; //file class 
