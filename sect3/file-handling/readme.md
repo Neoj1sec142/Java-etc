@@ -117,3 +117,40 @@ the Java I/O package (java.io) provides a set of input streams and a set of outp
     * create an output stream using the data sink that we have idenitified
     * write data to the output stream 
     * close the output stream once the writing of data is completed
+***   
+### Classes for Input And Output:
+- The streams that are charater-based can be 
+    implements with classes such as reader and Writer
+##### Charcter Stream Classes - Reader:
+![charpic](./charstream.png)
+- The reader stream classes are used for 
+    reading characters from files.
+- The Reader class is an abstract class, 
+    which means we cannot create an object of this class. We must use the subclasses of this class to create an object and do further processing 
+
+- The several subclasses of the Java Reader 
+    class can  be used for performing several character-based input functions. Tap on the above image to glance through the subclasses of the Reader class. Following is a quick of a few of them:
+    * FileReader - is used top read data from the file. It return data in byte format like FileInputStream class. It is a character-oriented class that is used for file handling in Java. It extends the InputStreamWriter class. 
+    * InputStreamReader - is used to translate (or convert) byte to characters. It is also known as a bridge between byte streams and character streams. This is because the InputStreamReader reads bytes from the input stream as characters 
+    * StringReader - the specified string acts as a source from where characters are read individually. Therefore, it takes an input string and changes it into a character stream.
+
+##### Methods of Reader Class:
+* int read() - reads a single char of data from the input stream. It returns an integer representation of the nect char present in the invoking input stream. It returns -1 when the end of the input is encountered.
+* int read(char[] array) - this method accepts a char array as a param, reads characters from the stream, and stores them in the specified array. The maximum of the array.length characters will be read. It will not return the data until the stream gets to the end.
+* int read(char[] array, int start, int length) it works the same as the pervious methods except for the ength. It reads data up to the given length of characters starting from the given start value.
+* void close() - closes the reader and releases any system resources associated with it.
+***   
+### Character Stream Classes - Writer:
+- is used to write charcters to a file. In other words its used to perform all output operations on files.
+- on the same lines as the Reader class, the Writer class is an abstract class, which means we cannot create an object of this class. We must use the subclasses of this class to create an object and do further processing. 
+- Some subclasses of the Writer class:
+    * FileWriter - is used to write char-oriented data to a file. It is a char-oriented class that is used for file-handling in java. It extends the OutputStreamWriter class.
+    * OutputStreamWriter - translates or converts from bytes to chars. It is also known as a bride between byte streams and character streams This is because the OutputStreamWriter converts chars into bytes.
+    * String Writer - is char stream that collects output from a string buffer, which can be used to contstruct a string.
+##### Methods of Writer Class:
+* void write(int char) - writes a single char to the writer. It accepts an int value as an input param
+* void write(char[] array) - writes the char from the specified arrap to the writer.
+* void write(char[] array, int offset, int length) - works the same was as pervious method except for length. It writes data up to the given length of Characters strating from the given offset byte.
+* void write(String str) - writes a specified string to the writer
+* void close() - closes the writer and releases any system resources associaed with it. 
+* void flush() - flushes the writer and forces any buffered output chars to be written out. In simple words, it force to write all data present in the ouput stream to the desitination
