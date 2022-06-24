@@ -44,3 +44,45 @@
 //         out.close();
 //     }
 // }
+
+//reading a character of a file using java
+// import java.io.FileReader;
+// import java.io.IOException;
+
+// public class FileHandling{
+//     public static void main(String[] args)throws IOException{
+//         FileReader file = new FileReader("java.txt");
+//         int data = file.read();
+//         System.out.print("File data: " + (char) data);
+//         file.close();
+//     }
+// }
+
+// reading all characters of a file with loop
+// import java.io.FileReader;
+// import java.io.IOException;
+// public class FileHandling{
+//     public static void main(String[] args)throws IOException{
+//         FileReader file = new FileReader("java.txt");
+//         int data = file.read();
+//         System.out.print("File Data: ");
+//         while(data != -1){
+//             System.out.print((char) data);
+//             data = file.read();
+//         }
+//         file.close();
+//     }
+// }
+
+// writing content to an existing file
+// import java.io.FileWriter;
+// import java.io.IOException;
+// public class FileHandling{
+//     public static void main(String[] args)throws IOException{
+//         String data = "I miss python";
+//         FileWriter file = new FileWriter("java.txt", true);
+//         file.write(data);
+//         System.out.print("Data Written Successfully");
+//         file.close();
+//     }
+// }

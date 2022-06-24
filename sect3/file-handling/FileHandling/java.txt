@@ -1,12 +1,2 @@
-blah de blah de blah de blah de 
-blah de blah de blah de blah de 
-blah de blah de blah de blah de 
-blah de blah de blah de blah de 
-blah de blah de blah de blah de 
-blah de blah de blah de blah de 
-blah de blah de blah de blah de 
-blah de blah de blah de blah de 
-blah de blah de blah de blah de 
-blah de blah de blah de blah de 
-blah de blah de blah de blah de 
-blah de blah de blah de blah deI miss python
+Java is a powerful programming language 
+created by James Gosling.I miss python
