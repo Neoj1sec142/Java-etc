@@ -51,3 +51,4 @@ the Java I/O package (java.io) provides a set of input streams and a set of outp
     following types:
     * Byte Stream - In Java, the byte stream is an 8 bit carrier, that is, it allows us to transmit (perform input and output) 8 bits of data. In simple words, when an input is provided and executed with byte data, then it is called the file handling process with a byte stream.
     * Character Stream - in Java is a 16-bit Unicode carrier, The processing of input data with a character is called the file handling process with a character stream 
+    
