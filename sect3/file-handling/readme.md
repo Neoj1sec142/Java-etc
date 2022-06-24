@@ -51,4 +51,69 @@ the Java I/O package (java.io) provides a set of input streams and a set of outp
     following types:
     * Byte Stream - In Java, the byte stream is an 8 bit carrier, that is, it allows us to transmit (perform input and output) 8 bits of data. In simple words, when an input is provided and executed with byte data, then it is called the file handling process with a byte stream.
     * Character Stream - in Java is a 16-bit Unicode carrier, The processing of input data with a character is called the file handling process with a character stream 
-    
+***   
+### Classes for Input and Output:
+- The streams that are byte-based are typcially implemented with classes such as InputStream or OutputStream while the streams that are character-based can be implemented with classes such as Reader or Writer
+***   
+#### Byte Stream Classes - InputStream
+![pic](./bytestream.png)
+* The streams that are byte-based are typicaly implemented 
+    with classes such as InputStream and OutputStream
+* The java.io package contains all the classes for the 
+    suppport of the streams. The class InputStream present in the java.io package is the base class for all input streams
+* The InputStream class is an abstract class, which means 
+    we cannot create an object of this class. We must use the subclass to create an object and do further processing.
+* The several subclasses of the Java InputStream class can
+     be used for performing several input functions. Tap on the above image to glace through the subclasses of the InputStream class. Following is a wuick overview of a few:
+    * FileInputStream - this input stream reads bytes from 
+        a file. In simple words, we can use this subclass of the InputStream class to read some data from a file in the form of bytes 
+    * ByteArrayInputStream - is composed of two words, 
+        bytearry and inputstream. as the name suggests it reads the byte array as an inputstream 
+    * ObjectInputStream - can be used to convert 
+        InputStream to object. This process of conversion of the input stream to an object is called deserialization. Simply a stream for objects instead of some data (bytes)
+##### Methods of InputStream Class:
+- The InputStream class prviodes several methods to perform various operations on the files:
+    * int read() - the read method reads one byte of data 
+        from the input stream. It returns the next input byte read as an int value in the range 0 to 255. If no byte is present because the end of the stream is reached -1 is returned
+    * int read(byte[] array) - this method accepts a byte 
+        array as a parameter, reads bytes from the stream, and stores them in the specified way. The mac of the array.length bytes will be read. It wil not return the data until the stream gets to the end. 
+    * int read(byte[] array, int offset, int length) - it 
+        works the same as the pervious method except for the length. It reads data up to the given length of bytes starting from the given offset byte.
+    * void close() - closes the input stream and releases 
+        any stream resources associated with it. 
+### Byte Stream Classes - OutputStream:
+- on the same lines as the InputStream class the 
+    OutputStream class is an abstract class, which means we cannot create and object of this class. We must use the subclasses of this class to create an object and do further processing.
+    - Subclasses:
+    * FileOoutputStream - can be used to write data (in 
+        bytes) to the files. In simple words we can use this subclass of the OutputStream class to write soe data to a file in the form of bytes.
+    * ByteArrayOutputStream - is composed of two words - 
+        bytearray and outputstream and can write data into byte array
+    * ObjectOutputStream - class used to write objects 
+        thats can be read by ObjectOutputStream 
+##### Methods of OutputStram Class:
+* void write(int byte) - writes the specified byte to the 
+    output stream. It accepts an int value as an input param
+* void write(byte[] array) - writes the bytes from the 
+    specified array to the output stream 
+* void write(byte[] array, int offset, int length) - same 
+    as pervios method execpt for length. It writes the data up to the given length of bytes starting from the given offset byte 
+* void close() - closes the output stream and releases and 
+    system resources associated with it.
+* void flush() - flushes the output stream and forces and 
+    buffered output bytes to be written out. In simple words, it forces to write all data present in the output stream to the destination.
+***   
+### Working with files Pt1: 
+- To read data from a data source into a Java program, we need to perform the following
+    steps:
+    * identify the source via file, string, array, network, connection, etc 
+    * create and input stream by using the data source identified
+    * read data from the input stream. Generally, we read data in a loop as long as we 
+        have recieved all data from the input stream
+    * close the input stream when the reading of data has finshed
+- to write data to a destination(data sink) from the Java prgram we need these steps:
+    * identify the destination whereyou are writing too via file, array string, network ,
+        connection, etc 
+    * create an output stream using the data sink that we have idenitified
+    * write data to the output stream 
+    * close the output stream once the writing of data is completed
