@@ -51,3 +51,31 @@
         2. StringIndexOutOfBoundsException - is thrown when a String or StringBuffer element is accessed out of the index.
     * NullPointerException - is a runtime exception thrown by JVM when we attempt to use null instead of an object. In simple words, it is thrown when the reference is null. 
 ![except](./exceptions.png)
+***   
+### Exception Handling Structure:
+- With the rise of OOP, exception support has become a crucial element of modern programming languages. As we know, exception handling plays quite a vital role when you hav some suppicious code that may raise an exception.
+- To handle exceptions in Java we can use a try/catch
+##### SYNTAX ##### 
+try{
+    // statements that may cause an excpetion 
+}catch(Exception e){
+    // code to handle the exception 
+}
+- sometimes a try block can raise multiple excpetions so in these cases we can use multiple catch blocks
+##### SYNTAX ##### 
+try{
+    // statements that may cause exception 
+}catch(Excpetion1 e){
+    // code to handle 
+}catch(Exception2 e){
+    // code to handle 
+}catch(ExcpetionN e){
+    // code to handle
+}
+***   
+##### 2 Exception methods:
+* public String getMessage() - is used to return a detailed message of the Throwable 
+        object which can also be null. One can use this method to get the detailed message of exception as a string value.
+* public void printStackTrace() - is a Java tool used to handle exceptions and 
+        errors. It prints the throwable along with other details like the line number and class name where the excpetion occured. 
+        
