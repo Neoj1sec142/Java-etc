@@ -86,3 +86,25 @@ import java.net.*;
         * InputStream getInputStream() - returns an input stream for the given socket. This input stream is onnected to the output stream of the remote socket.
         * OutputStream getOutputStream() - returns an output stream for the given socket. This output stream is connected to the input stream of the remote socket.
         * void close() - closes the socket connection which makes the Socket object no longer capable of conneting again to any server 
+### More I/O classes:
+##### Packages used in Network Programming:
+- java provides a collection of classes and interfaces that take care of low level communication details between the client and the server, and provide a powerful infrastructure for networking. These are mostly contained i the java.net package 
+- Along with that, we also need the java.io package which gives us input and output streams to write to and read from while communicating over the network. To do that, we need to import the same using the following statement:
+    * import java.io.*;
+- heres a few more classes that will come in handy for networking from i/o:
+    - we would be using character based streams to exchange data between the client and server while communicating. The streams that are character based are typically implemented with classes such as reader or writer
+    * InputStreamReader - is usd to translate (or convert) bytes to 
+        characters. It is also known as a bridge between byte streams and character streams. This is because the InputStreamReader reads bytes from the input stream as characters.
+    * BufferedReader - is a Java clas to read the text from an input 
+        stream by buffering characters that seamlessly read characters, arrays, or lines. The constructor of this class accepts an InputStream object as a parameter
+        - also, inherits the Reader class and makes the code efficient since we can read the data line-by-line with the readline() method  
+    * PrintWriter - id the implementation of the Writer class and is used to write output sata in a commonly readable form (text). It is used to print the formatted representation of object to the text-output stream.
+***   
+- As we know, the Socket class provides us with methods to get the Input and Output streams. Therefore, once our socket instance is connected to the server we can start obtaining input and output streams to the server.
+- Intput streams are used to read data from the server while output streams are used to write data to the server. Following is how we can obtain input and output streams: 
+##### SYNTAX ##### 
+InputStream in = socket.getInputStream();
+OutputStream out = socket.getOutputStream();
+* Understand that these input and output streams are ordinary streams that we would use to read from and write to a file. Therefore, we can convert them to the form that best serves our use case.
+    * We could wrap the OutputStream with a PrintWriter so that we can easily write test with methods link println()
+    * Also, we could wrap the IputStream with BufferReader, via an InputStreamReader, in order to easily read text with methods link readLine()
