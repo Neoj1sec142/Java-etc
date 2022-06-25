@@ -94,3 +94,61 @@
 //     }
 // }
 
+// imagine a full calucaltor
+// public class Handling{
+//     public static void divide(int num1, int num2){
+//         try{
+//             int res;
+//             res = num1 / num2;
+//             System.out.println("Division is: " + res);
+//         }catch(ArithmeticException e){
+//             System.out.println("You cannot divide a num by zero");
+//         }
+//     }
+//     public static void main(String[] args){
+//         divide(10,2);
+//     }
+// }
+
+// using the throws keyword
+// public class Handling{
+//     public static void divide(int num1, int num2)throws ArithmeticException{
+//         int res;
+//         res = num1 / num2;
+//         System.out.println("Division is: " + res);
+//     }
+//     public static void main(String[] args){
+//         try{
+//             divide(10,2);
+//         }catch(ArithmeticException e){
+//             System.out.println("you cannot divide by zero");
+//         }
+        
+//     }
+// }
+
+// using throw keyword
+import java.util.Scanner;
+public class Handling{
+    public static void votingSys(int age){
+        if(age > 18){
+            System.out.println("You are elidgeable to vote");
+        }else{
+            throw new ArithmeticException("Cannot cast a vote must be 18!");
+        }
+    }
+    public static void main(String[] args){
+        int age;
+        Scanner scan = new Scanner(System.in);
+        try{
+            System.out.println("Enter your age: ");
+            age = scan.nextInt();
+            votingSys(age);
+        }catch(ArithmeticException e){
+            System.out.println(e.getMessage());
+        }finally{
+            System.out.println("every vote counts!");
+        }
+        scan.close();
+    }
+}

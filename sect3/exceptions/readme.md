@@ -89,3 +89,21 @@ try{
 }finally{
     // statments to always be executed
 }
+***   
+### Throws vs throw:
+##### Throws
+- the throws keyword in Java is used to handle checked exceptions. It is used to declare which exceptions can be thrown from a method when it is executed.
+- Therefore, the aim is to handle the exceptions just like using the try-catch blocks, but instead, just specifiying the exceptions that might occurs which can be handled at some later stage.
+- The throws keyword is used in a method signature and declares which exceptions can be thrown from a method.
+##### SYNTAX #####
+accessModifier returnType methodName() throws Excaption1, Exception2...{
+    // code
+}
+- this jas its advantages of being able to handle multiple exceptions at the smae time and wont handle anything unless u call the method in which the exception amy arrise.
+***   
+##### Throw: 
+- is used to explicitly throw an excpetion from a method or any block of code. It can be used to throw either checked or unchecked exceptions. It is mainy used to throw custom exceptions. 
+- Thereforem we can define our own set of conditions or rules and throw and excpeiton excplicitly using the throw keywoprd wherever required. 
+##### SYNTAX ##### 
+throw throwableObject;
+throw new exceptionClass("custom Error Message")
