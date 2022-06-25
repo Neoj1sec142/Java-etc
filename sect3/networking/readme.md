@@ -108,3 +108,20 @@ OutputStream out = socket.getOutputStream();
 * Understand that these input and output streams are ordinary streams that we would use to read from and write to a file. Therefore, we can convert them to the form that best serves our use case.
     * We could wrap the OutputStream with a PrintWriter so that we can easily write test with methods link println()
     * Also, we could wrap the IputStream with BufferReader, via an InputStreamReader, in order to easily read text with methods link readLine()
+### Creating Client Server:
+##### Creating a connection:
+- In java, we can create programs that can help us establish a connection with other devices over the network and exchange inofrmation. This is generally referred to as network programming.
+- We need to create two separate Java pograms that will handle sockets for the same. One program will contain the logic for our server while the other will be responsible for handling the client 
+IN THE NETWORKING FOLDER
+[Server Page](./Networking/Server.java)
+[Client Page](./Networking/Client.java)
+***  
+##### Server Side: 
+- the ServerSocket class of the java.net package is used by server applications to obtain a port and listen for client requests. Here, the server contructs a ServerSocket object using its constuctor and specifies the port number on which our converstaion will occur. 
+* NOTE * Ports between 0 - 1023 are mainly used for administrative purposes(eg 21 for FTP, 23 for Telnet, 25 for email, and 80 for HTTP) Therefore it is advised to use ports that are not reserved for any other specific purpose 
+- next the accept() method is called by the server to validate an incoming request to the socket. If everything goes well, the server accepts the conneciton. Here the accept method returns a socket object 
+- upon acceptance the server gets a new socket object, socket, and also had its remote endpoint set tot the address and port of the client.
+- If the connection is created successfully, the following println() statement shall be executed and print ":successfully connected"
+##### Client Side:
+- to make the connection with a server we need a socket connection. In simple words, it means a socket object that comes with java.net.Socket class 
+- 127.0.0.1 is the IP address of our local machine kknown as localhost. Its a domain name that redirects you to your computer. Along with that, we need to specify the port number as the second arguement which represents the port to which the server is listening for requests
