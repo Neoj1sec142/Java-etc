@@ -63,16 +63,34 @@
 // }
 
 // when you dont know which exception will be throw use generic exception class
-public class Handling{
-    public static void main(String[] args){
-        try{
-            int num1, num2, res;
-            num1 = 5;
-            num2 = 0;
-            res = num1 / num2;
-            System.out.println("Division is: " + res);
-        }catch(Exception e){
-            System.out.println("You cannot divide a num by zero");
-        }
-    }
-}
+// public class Handling{
+//     public static void main(String[] args){
+//         try{
+//             int num1, num2, res;
+//             num1 = 5;
+//             num2 = 0;
+//             res = num1 / num2;
+//             System.out.println("Division is: " + res);
+//         }catch(Exception e){
+//             System.out.println("You cannot divide a num by zero");
+//         }
+//     }
+// }
+
+// using a finally block
+// public class Handling{
+//     public static void main(String[] args){
+//         try{
+//             int num1, num2, res;
+//             num1 = 5;
+//             num2 = 0;
+//             res = num1 / num2;
+//             System.out.println("Division is: " + res);
+//         }catch(Exception e){
+//             System.out.println("You cannot divide a num by zero");
+//         }finally{
+//             System.out.println("Thank yo for ussing our calculator");
+//         }
+//     }
+// }
+

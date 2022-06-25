@@ -78,4 +78,14 @@ try{
         object which can also be null. One can use this method to get the detailed message of exception as a string value.
 * public void printStackTrace() - is a Java tool used to handle exceptions and 
         errors. It prints the throwable along with other details like the line number and class name where the excpetion occured. 
-        
+***   
+### Finally Statment:
+- there are situations where we need to execute some part of the code irrespective of whether the exception is raised or not. In such cases we can use the finally statement
+##### SYNTAX #####
+try{
+    // statements that may cause an excpetion 
+}catch(Exception e){
+    // code to handle the exception 
+}finally{
+    // statments to always be executed
+}
