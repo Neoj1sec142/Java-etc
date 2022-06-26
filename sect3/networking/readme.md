@@ -125,3 +125,11 @@ IN THE NETWORKING FOLDER
 ##### Client Side:
 - to make the connection with a server we need a socket connection. In simple words, it means a socket object that comes with java.net.Socket class 
 - 127.0.0.1 is the IP address of our local machine kknown as localhost. Its a domain name that redirects you to your computer. Along with that, we need to specify the port number as the second arguement which represents the port to which the server is listening for requests
+***   
+### Enabling Communication:
+- For EX 2 in the networking code folder i am creating a tcp client and server that will accept the clients name and greet them with their name.
+    ##### Server Side 
+    * If you observe the code the basic structure remains the same. Once the connection is mase we need the I/o streams. These are created using lines 34-36 of the server file. 
+    * Here the reader and writer are the I/o objects that we shall use to communicate and ssend data to and fro.
+    * Once we have these onjects we can read the data coming from the client usign the readLine() and send data to the client over the network using the println() 
+    * Next we store the name of the client in the input variable using the readLine() and greet the user with Hello
