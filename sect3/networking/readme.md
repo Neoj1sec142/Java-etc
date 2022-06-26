@@ -128,8 +128,11 @@ IN THE NETWORKING FOLDER
 ***   
 ### Enabling Communication:
 - For EX 2 in the networking code folder i am creating a tcp client and server that will accept the clients name and greet them with their name.
-    ##### Server Side 
     * If you observe the code the basic structure remains the same. Once the connection is mase we need the I/o streams. These are created using lines 34-36 of the server file. 
     * Here the reader and writer are the I/o objects that we shall use to communicate and ssend data to and fro.
     * Once we have these onjects we can read the data coming from the client usign the readLine() and send data to the client over the network using the println() 
     * Next we store the name of the client in the input variable using the readLine() and greet the user with Hello
+***   
+### Continuous Communication:
+- to enable continuous communication, we will have to create a while loop to continuously observe the input stream of the server for incoming messages. But, in this section, we won't create a chat app. We are creating an echo server.
+-Hence the EchoServer.java and EchoClient.java files
