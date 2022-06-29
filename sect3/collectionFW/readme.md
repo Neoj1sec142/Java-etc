@@ -23,3 +23,27 @@
 - A framework is a set of classes and interfaces which provide a ready-made architecture. In order to implement a new feature or a class, there is no need to define a framework.
 - However, an optimal object-oriented deisgn always includes a framwork with a colection of classes such that all the classes perform the same kind of task.
 - A java collections framework is a sophisticated heirarchy of several perdefined interfaces and implementation classes that can be used to handle a group of objects as a single entity. It is present in the java.util package
+***    
+### Understand Containers:
+- The first type of container stores only individual objects in a collection together as a single entity. This is referd to as a Java Collection.
+- Along with these, Java also provides structures that enable us to store data in the form of key-value pairs. This type of containetr is called a Map in Java.
+![heirarchy](collection.png)
+- With the above interfaces and classes of the colleciton framework alsop called the collection frame work heirarchy.
+- All the interfaces and classes for the collection framework are located in the java.util package.
+- The collection framework contians an interface named an Iterable interface which provides the iterator to iterate through all the collections. this interface is extended by the main Collection interface which acts as root for the collections framework.
+- All the collections extend this collection interface thereby extending the properties of the iterator and the methods of this interface.
+- Further, the Collection interaface is extended by the List, Queue, and the Set interfaces. 
+- As we know along with Collection interaface, there is another root interface called Map. This Map interface does not extend the Collection interface because it stores key-value pairs, and the classes that come under the Collection interface only store values.
+### Collection Interface:
+* The Collection interface is the foundation upon which the collection framework is built. It is places that the toip of the heirarchy.
+* It provides the basic operations for adding and removing elements in the collecitons by delcaring the core methods that all collections will have.
+* The COlleciton interface extends the Iterable interface. The iterable interface has only one method called iterator(). Thefunction of the iteraotr methods is to return the iteraitor object using which we can iterate over the elements of the collection
+#### Collection Interface Methods:
+- The collection interface defines several methods that help in manipulatin ght elemenets of a colleciton which the implementation classes invoke. Following are some of them:
+    * boolean add(Object obj): is used to add or insert an element in the collection. It returns a boolean value true if the obj was added to the collection or returns false if the obj is already a member of the collection, or if the collection does not allow duplicates.
+    * boolean remove(Object obj): removes a specified element from the collection. It returns true if the element was removed, Otherwise false
+    * int size(): returns the total number of elements in the colleciton as an integer.
+    * boolean contains(Object obj): checks if an element is present pr not in a collection and accordingly returns a boolean value 
+    * void clear(): clears or removes all the elements from the colleciton. 
+    * boolean isEmpty(): is used to check if the collection is empty and returns a boolean value accordingly.
+    Object[] toArray(): returns a new array from containing all the elements from the collection. In simple words the elements of the collection are coopied to an array.
