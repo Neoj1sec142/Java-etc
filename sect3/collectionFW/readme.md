@@ -47,3 +47,41 @@
     * void clear(): clears or removes all the elements from the colleciton. 
     * boolean isEmpty(): is used to check if the collection is empty and returns a boolean value accordingly.
     Object[] toArray(): returns a new array from containing all the elements from the collection. In simple words the elements of the collection are coopied to an array.
+***   
+### List Interface:
+- The List inteface in Jav extends the Collection 
+    interface and enables us to create a collection that allows storing a sequence of data. This, a list is a collection to store elements in a sequential order
+#### SYNTAX ####
+public interface List<E> extends Collection<E>
+
+* The List in Java is sequelntially ordered 
+    collection. Hence, the elements of the list can be accessed and identified based on their index/numbers
+* List allows storing duplicate elements. This means, 
+    List in Java is not a unique collection 
+* Java List is resizable collection. This means we can 
+    increase or decrease the size of the list thereby  making it a dynamic structure
+* Since it is a resizable collection, one can add or 
+    remove elements from anu position in the List. This makes the list mainutlation quite efficient.
+#### Methods of List Interface:
+void add(int index, Object obj): adds/inserts the 
+    specified element at a particular position in the list/ Any pre-exisiting elements at or beyond the point of intsertion are shifted up.
+Object remove(int index): is used to remove an element 
+    at a spcified position in the list and returns the removed element.
+Object set(int index, Object obj): replaces the 
+    exisitng element at the specified position in the list with a new specified element.
+Object get(int index):is isd to return a element/
+    object stored at a specified position in the list. In simple words, it is used to fetrch an element at the index.
+int indexOf(Object obj): is used to return the index 
+    of a particular element of the first occurence in the list. If the leemnt is not present in the list then it returns -1.
+int lastIndexOf(Object obj): returns the index of the 
+    last occurence of a specified lement in the list. If the list does not contian that particular element, it returns -1 
+##### List Implementation Methods:
+* ArrayList
+* LinkedList
+* Vector
+* Stack
+
+#### NOTE !! :
+- If Lists and Arrays both store data in sequeltial order, why use lists over arrays?
+    * The limitation with an array is that it has a fixed length. Therefore, if it is full, you cannot add any more elements to it. Likewise, if there are a number of elements that are removed from it, then the memory consumption would be the same as it doesn't shrink.
+    * On the other hand, Java Lis can dynamically grow and shrink after the addition and removal of elements. Apart from these benefits, List implementations enable us to use predefined methods which make our task quite easy.
