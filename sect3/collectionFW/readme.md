@@ -75,7 +75,7 @@ int indexOf(Object obj): is used to return the index
     of a particular element of the first occurence in the list. If the leemnt is not present in the list then it returns -1.
 int lastIndexOf(Object obj): returns the index of the 
     last occurence of a specified lement in the list. If the list does not contian that particular element, it returns -1 
-##### List Implementation Methods:
+##### List Implementation Classes:
 * ArrayList
 * LinkedList
 * Vector
@@ -85,3 +85,10 @@ int lastIndexOf(Object obj): returns the index of the
 - If Lists and Arrays both store data in sequeltial order, why use lists over arrays?
     * The limitation with an array is that it has a fixed length. Therefore, if it is full, you cannot add any more elements to it. Likewise, if there are a number of elements that are removed from it, then the memory consumption would be the same as it doesn't shrink.
     * On the other hand, Java Lis can dynamically grow and shrink after the addition and removal of elements. Apart from these benefits, List implementations enable us to use predefined methods which make our task quite easy.
+
+### List Implementation Classes:
+* ArrayList - is the most commonly used implemetation of the List interface. In 
+    simple words ArrayList is a resizable array that can grow or shrink in the momory whenever needed. Hence, it is also known as a dynamic array. To handle all the limitations of arrays, we can use the ArrayList 
+    - The elements in ArrayList are placed accordingly to the zero-based index. This means the first element will be placed at the index number 0 and the last element at index (n-1) when 'n' is the size of the array
+    - NOTE ArrayList allows storing Hererogeneous objects. This means it can be used to store elements of different types in a single collection.
+* 
