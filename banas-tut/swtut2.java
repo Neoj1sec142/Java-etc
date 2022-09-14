@@ -26,15 +26,18 @@ public class swtut2 extends JFrame{
         ListenForButton lforbtn = new ListenForButton();
         btn1.addActionListener(lforbtn);
         pan.add(btn1);
-        txtF1 = new JTextField("", 15);
+        txtF1 = new JTextField("Some Text", 15);
+        txtA1 = new JTextArea("Some Text");
         ListenForKeys lforkeys = new ListenForKeys();
         txtF1.addKeyListener(lforkeys);
         pan.add(txtF1);
-        JTextArea bt = new JTextArea(15, 20);
-        bt.setText("Tracking Events: \n");
-        bt.setLineWrap(true);
-        JScrollPane scrl = new JScrollPane(bt, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+        JTextArea txtA1 = new JTextArea(15, 20);
+        txtA1.setText("Tracking Events: \n");
+        txtA1.setLineWrap(true);
+        JScrollPane scrl = new JScrollPane(txtA1, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
         pan.add(scrl);
+        // pan.add(txtA1);
+        // pan.add()
         // pan.add(bt);
         this.add(pan);
         ListenForMouse lformou = new ListenForMouse();
