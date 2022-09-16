@@ -83,8 +83,31 @@ public class Swing_Two extends JFrame{
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            // TODO Auto-generated method stub
-            
+            if(e.getSource() == btn1){
+                try{
+                    num1 = Double.parseDouble(txtField1.getText());
+                    num2 = Double.parseDouble(txtField2.getText());
+                }catch(NumberFormatException exc){
+                    JOptionPane.showMessageDialog(Swing_Two.this, "Please Enter the Right Info: ", "Error", JOptionPane.ERROR_MESSAGE);
+                    System.exit(0);
+                }
+                if(addNums.isSelected()){ totCalc = addNumbers(num1, num2, howManyTimes.getValue());
+                    
+                }else if(subtractNums.isSelected()){ totCalc = subtractNumbers(num1, num2, howManyTimes.getValue());
+                
+                }else if(multiNums.isSelected()){ totCalc = multiplyNumbers(num1, num2, howManyTimes.getValue());
+                
+                }else { totCalc = divideNumbers(num1, num2, howManyTimes.getValue());}
+            }
+            if(dollarSign.isSelected()){
+                NumberFormat numFormat = NumberFormat.getCurrencyInstance();
+                JOptionPane.showMessageDialog(Swing_Two.this, numFormat.format(totCalc), "Solution", JOptionPane.INFORMATION_MESSAGE);
+            }else if(commaSeparator.isSelected()){
+                NumberFormat numFormat = NumberFormat.getNumberInstance();
+                JOptionPane.showMessageDialog(Swing_Two.this, numFormat.format(totCalc), "Solution", JOptionPane.INFORMATION_MESSAGE);
+            }else{
+                JOptionPane.showMessageDialog(Swing_Two.this, totCalc, "Solution", JOptionPane.INFORMATION_MESSAGE);
+            }
         }
 
     }
@@ -92,9 +115,48 @@ public class Swing_Two extends JFrame{
 
         @Override
         public void stateChanged(ChangeEvent e) {
-            // TODO Auto-generated method stub
+            if(e.getSource() == howManyTimes){
+                lbl3.setText("Perform Home Many Times? " + howManyTimes.getValue());
+            }
             
         }
 
     }
+    public static double addNumbers(double num1, double num2, int howMany){
+        double tot = 0;
+        int i = 1;
+        while(i <= howMany){
+            tot = tot + (num1 + num2);
+            i++;
+        }
+        return tot;
+    }
+    public static double subtractNumbers(double num1, double num2, int howMany){
+        double tot = 0;
+        int i = 1;
+        while(i <= howMany){
+            tot = tot + (num1 - num2);
+            i++;
+        }
+        return tot;
+    }
+    public static double multiplyNumbers(double num1, double num2, int howMany){
+        double tot = 0;
+        int i = 1;
+        while(i <= howMany){
+            tot = tot + (num1 * num2);
+            i++;
+        }
+        return tot;
+    }
+    public static double divideNumbers(double num1, double num2, int howMany){
+        double tot = 0;
+        int i = 1;
+        while(i <= howMany){
+            tot = tot + (num1 / num2);
+            i++;
+        }
+        return tot;
+    }
 }
+
