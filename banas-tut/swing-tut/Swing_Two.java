@@ -65,7 +65,7 @@ public class Swing_Two extends JFrame{
         addNums.setSelected(true);
 
         pan.add(operPan);
-        lbl3 = new JLabel("Perform How Many Times:");
+        lbl3 = new JLabel("Perform How Many Times: " + howManyTimes.getValue());
         howManyTimes = new JSlider(0, 99, 1);
         howManyTimes.setMinorTickSpacing(1);
         howManyTimes.setMajorTickSpacing(10);
