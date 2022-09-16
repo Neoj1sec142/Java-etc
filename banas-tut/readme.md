@@ -1,7 +1,7 @@
 # Following Derek Banas Java Tutorial:
-1. [] - []()     
-2. [] - []()     
-3. [] - []()     
+1. [x] - [Swing 1](./swing-tut/Swing_One.java)     
+2. [x] - [Swing 2](./swing-tut/Swing_Two.java)     
+3. [x] - [Swing 3](./swing-tut/Swing_Two.java)     
 4. [] - []()     
 5. [] - []()     
 6. [] - []()     
