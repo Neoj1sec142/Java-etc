@@ -1,15 +1,19 @@
 import javax.swing.*;
 
+// import JavaLesson26.ListenForButton;
+import java.awt.event.*;
 import java.awt.Font;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
-import java.awt.GridLayout;
+// import java.awt.GridLayout;
 import java.awt.Insets;
 
 public class JavaLesson29 extends JFrame{
     JButton btn1, btn2, btn3, btn4, btn5, btn6, btn7,
-    btn8, btn9, btnPlus, btnMinus, clearAll, btn0;
+    btn8, btn9, btnPlus, btnMinus, clearAll, btn0, getAnswer;
     JTextField txtRes;
+    double num1, num2, solution;
+    
     public static void main(String[] args){
         new JavaLesson29();
     }
@@ -33,10 +37,14 @@ public class JavaLesson29 extends JFrame{
         gridCon.anchor = GridBagConstraints.CENTER;
         gridCon.fill = GridBagConstraints.BOTH;
 
+        JPanel pan2 = new JPanel();
+        getAnswer = new JButton("Get Answer");
+        pan2.add(getAnswer);
+
         txtRes = new JTextField("0", 20);
         Font font = new Font("Helvetica", Font.PLAIN, 18);
         txtRes.setFont(font);
-
+        ListenForButton lforbtn = new ListenForButton();
         btn1 = new JButton("1");
         btn2 = new JButton("2");
         btn3 = new JButton("3");
@@ -88,7 +96,22 @@ public class JavaLesson29 extends JFrame{
         
         
         
+        this.add(pan2);
         this.add(pan);
         this.setVisible(true);
+    }
+    public class ListenForButton implements ActionListener{
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            if(e.getSource() == btn1){
+                solution = 0;
+                txtRes += "solution: ";
+                
+                
+                JOptionPane.showMessageDialog(JavaLesson29.this, txtRes, "Information", JOptionPane.INFORMATION_MESSAGE);
+            }
+        }
+        
     }
 }
