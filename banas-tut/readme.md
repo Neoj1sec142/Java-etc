@@ -12,8 +12,8 @@
 29. [x] - [Swing Layout Management](./swing-tut/JavaLesson29/JavaLesson29.java)     
 30. [x] - [Swing Layout Management](./swing-tut/JavaLesson29/JavaLesson30.java)     
 <!-- Intermediate Java -->
-31. [] - [The File Class](./intermediate/JavaLesson31/)     
-32. [] - [Read & Write Files](./intermediate/JavaLesson32/)     
+31. [x] - [The File Class](./intermediate/JavaLesson31/JavaLesson31.java)     
+32. [x] - [Read & Write Files](./intermediate/JavaLesson32/JavaLesson32.java)     
 33. [] - [R&W Binary](./intermediate/JavaLesson33/)     
 34. [] - [Java DBs](./intermediate/JavaLesson34/)     
 35. [] - [Java Debugging](./intermediate/JavaLesson35/)     
