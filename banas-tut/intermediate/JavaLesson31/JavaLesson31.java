@@ -1,3 +1,4 @@
+import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import java.io.*;
 public class JavaLesson31 extends JFrame{
@@ -30,6 +31,32 @@ public class JavaLesson31 extends JFrame{
             for(String fileName : fileInDir){
                 System.out.println(fileName + "\n");
             }
+            System.out.println("Is File: " + randomFile.isFile() + "\n");
+            System.out.println("Is Hidden: " + randomFile.isHidden() + "\n");
+            System.out.println("Last Modified: " + randomFile.lastModified() + "\n");
+            System.out.println("Size: " + randomFile.length() + "\n");
+            randomFile.renameTo(new File("/Users/neo/Desktop/Java/randomFile.txt"));
+            new JavaLesson31();
+        }else{
+            System.out.println("File doesn't exist");
         }
+        if(randomFile.delete()){
+            System.out.println("File Already Deleted");
+        }
+            
+        File[] filesInDir = randomDir.listFiles();
+        for(File filename : filesInDir){
+            System.out.println("Deleting: " + filename + "\n");
+            filename.delete();
+        }
+        
+        if(randomDir.delete()){
+            System.out.println("Directory Deleted");
+        }
+        System.exit(0); // Makes porgram exit with no error status (if it gets this far without errors)
+    }   
+    public JavaLesson31(){
+        JFileChooser fileChoose = new JFileChooser(randomDir);
+        fileChoose.showOpenDialog(this);
     }
 }
