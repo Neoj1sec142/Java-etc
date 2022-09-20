@@ -1,4 +1,6 @@
 # Following Derek Banas Java Tutorial:
+
+<!-- Swing Framework -->
 21. [x] - [Swing 1](./swing-tut/Swing_One.java)     
 22. [x] - [Swing 2](./swing-tut/Swing_Two.java)     
 23. [x] - [Swing 3](./swing-tut/Swing_Two.java)     
@@ -7,16 +9,19 @@
 26. [x] - [Swing Spinners](./swing-tut/JavaLesson26/JavaLesson26.java)     
 27. [x] - [Swing Tree File Sys](./swing-tut//JavaLesson27/JavaLesson27.java)     
 28. [x] - [Swing Layout Management](./swing-tut/JavaLesson28/JavaLesson28.java)     
-29. [] - [Swing Layout Management](./swing-tut/JavaLesson29/JavaLesson29.java)     
-30. [] - [Swing Layout Management]()     
-31. [] - []()     
-32. [] - []()     
-33. [] - []()     
-34. [] - []()     
-35. [] - []()     
-36. [] - []()     
-37. [] - []()     
-38. [] - []()     
+29. [x] - [Swing Layout Management](./swing-tut/JavaLesson29/JavaLesson29.java)     
+30. [x] - [Swing Layout Management](./swing-tut/JavaLesson29/JavaLesson30.java)     
+<!-- Intermediate Java -->
+31. [] - [The File Class](./intermediate/JavaLesson31/)     
+32. [] - [Read & Write Files](./intermediate/JavaLesson32/)     
+33. [] - [R&W Binary](./intermediate/JavaLesson33/)     
+34. [] - [Java DBs](./intermediate/JavaLesson34/)     
+35. [] - [Java Debugging](./intermediate/JavaLesson35/)     
+<!-- Video w/ Sabermetrics -->
+36. [] - [Sabermetrics Video](./sabermetrics/JavaLessonS1/)     
+37. [] - [Sabermetrics Video](./sabermetrics/JavaLessonS2/)     
+38. [] - [Sabermetrics Video](./sabermetrics/JavaLessonS3/)     
+<!-- Video, JTables, and MYSQL -->
 39. [] - []()     
 40. [] - []()     
 41. [] - []()     
