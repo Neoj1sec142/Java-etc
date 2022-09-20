@@ -9,7 +9,8 @@ public class JavaLesson30 extends JFrame{
         agelbl, sexlbl, optionslbl, aboutlbl;
     JTextField nametxt, streettxt;
     JComboBox stateList;
-    JSpinner ageSlider;
+    JSlider ageSlider;
+    JSpinner dateSpin;
     JRadioButton maleRadio, femaleRadio;
     ButtonGroup sexGroup;
     JCheckBox morningCheck, afterNCheck, eveCheck;
@@ -30,13 +31,13 @@ public class JavaLesson30 extends JFrame{
         addComp(pan, namelbl, 0, 0, 1, 1, GridBagConstraints.EAST, GridBagConstraints.NONE);
 
         nametxt = new JTextField(30);
-        addComp(pan, nametxt, 2, 0, 1, 1, GridBagConstraints.WEST, GridBagConstraints.NONE);
+        addComp(pan, nametxt, 1, 0, 2, 1, GridBagConstraints.WEST, GridBagConstraints.NONE);
         
         streetlbl = new JLabel("Street: ");
         addComp(pan, streetlbl, 0, 1, 1, 1, GridBagConstraints.EAST, GridBagConstraints.NONE);
 
         streettxt = new JTextField(30);
-        addComp(pan, streettxt, 0, 1, 2, 1, GridBagConstraints.WEST, GridBagConstraints.NONE);
+        addComp(pan, streettxt, 1, 1, 2, 1, GridBagConstraints.WEST, GridBagConstraints.NONE);
 
         Box sexBox = Box.createVerticalBox();
         maleRadio = new JRadioButton("Male");
@@ -49,6 +50,52 @@ public class JavaLesson30 extends JFrame{
         sexBox.setBorder(BorderFactory.createTitledBorder("Sex"));
         addComp(pan, sexBox, 3, 0, 2, 1, GridBagConstraints.WEST, GridBagConstraints.NONE);
         
+        JPanel statePan = new JPanel();
+        statePan.setLayout(new FlowLayout(FlowLayout.LEFT, 10, 0));
+        
+        statelbl = new JLabel("State: ");
+        statePan.add(statelbl);
+        String[] states = {"IL", "IN", "MI"};
+        stateList = new JComboBox<>(states);
+        statePan.add(stateList);
+
+        datelbl = new JLabel("Appointment Date: ");
+        statePan.add(datelbl);
+        Date todaysDate = new Date();
+        dateSpin = new JSpinner(new SpinnerDateModel(todaysDate, null, null, Calendar.DAY_OF_MONTH));
+        JSpinner.DateEditor dtEdit = new JSpinner.DateEditor(dateSpin, "dd/MM/yy");
+        dateSpin.setEditor(dtEdit);
+        statePan.add(dateSpin);
+
+        agelbl = new JLabel("Age: 50");
+        statePan.add(agelbl);
+        ageSlider = new JSlider(1, 99, 50);
+        ListenForSlider lforslide = new ListenForSlider();
+        ageSlider.addChangeListener(lforslide);
+        statePan.add(ageSlider);
+        addComp(pan, statePan, 1, 2, 5, 1, GridBagConstraints.EAST, GridBagConstraints.NONE);
+
+        Box optionBox = Box.createVerticalBox();
+        morningCheck = new JCheckBox("Morning");
+        afterNCheck = new JCheckBox("After Noon");
+        eveCheck = new JCheckBox("Evening");
+        optionBox.add(morningCheck);
+        optionBox.add(afterNCheck);
+        optionBox.add(eveCheck);
+
+        optionBox.setBorder(BorderFactory.createTitledBorder("Time of Day"));
+        addComp(pan, optionBox, 1, 3, 2, 1, GridBagConstraints.NORTHWEST, GridBagConstraints.NONE);
+
+        aboutYou = new JTextArea(6, 40);
+        aboutYou.setText("Tell us about you");
+        aboutYou.setLineWrap(true);
+        aboutYou.setWrapStyleWord(true);
+
+        JScrollPane scroll1 = new JScrollPane(aboutYou, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+        addComp(pan, scroll1, 2, 3, 3, 1, GridBagConstraints.EAST, GridBagConstraints.NONE);
+        
+
+
         this.add(pan);
         this.pack();
 
