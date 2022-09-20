@@ -14,7 +14,7 @@
 <!-- Intermediate Java -->
 31. [x] - [The File Class](./intermediate/JavaLesson31/JavaLesson31.java)     
 32. [x] - [Read & Write Files](./intermediate/JavaLesson32/JavaLesson32.java)     
-33. [] - [R&W Binary](./intermediate/JavaLesson33/)     
+33. [x] - [R&W Binary](./intermediate/JavaLesson33/JavaLesson33.java)     
 34. [] - [Java DBs](./intermediate/JavaLesson34/)     
 35. [] - [Java Debugging](./intermediate/JavaLesson35/)     
 <!-- Video w/ Sabermetrics -->
